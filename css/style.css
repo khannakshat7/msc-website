@@ -1,0 +1,225 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: Calibri;
+	display: flex;
+	flex-direction: column;
+}
+.m-b-0 {
+	margin-bottom: 0;
+}
+.card-action {
+	font-size: 20px;
+	background-color: black !important;
+}
+.card-title {
+	font-size: 15px !important;
+}
+.card-action i {
+	color: #0089cf;
+}
+.card-action i:hover {
+	color: #a3cd39;
+}
+
+.card:hover {
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+}
+main {
+	flex: 1 0 auto;
+}
+
+h1.title {
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+/* start welcome animation */
+.carousel {
+	opacity: 0;
+	animation: moveIn 2s 3.1s ease forwards;
+}
+
+body.welcome {
+	background: #ffffff;
+	-webkit-font-smoothing: antialiased;
+}
+
+.welcome .splash {
+	height: 0px;
+	padding: 0px;
+	border: 130em solid #ffffff;
+	position: fixed;
+	left: 50%;
+	top: 100%;
+	display: block;
+	box-sizing: initial;
+	overflow: hidden;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
+}
+
+.welcome #welcome {
+	background: #000000;
+	width: 56px;
+	height: 56px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	overflow: hidden;
+	opacity: 0;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards,
+		moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards,
+		moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
+		materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards, hide 2s 2.9s ease forwards;
+}
+
+/* moveIn */
+.welcome header,
+.welcome a.btn,
+main {
+	opacity: 0;
+	animation: moveIn 2s 3.1s ease forwards;
+}
+
+@keyframes init {
+	0% {
+		width: 0px;
+		height: 0px;
+	}
+	100% {
+		width: 56px;
+		height: 56px;
+		margin-top: 0px;
+		opacity: 1;
+	}
+}
+
+@keyframes puff {
+	0% {
+		top: 100%;
+		height: 0px;
+		padding: 0px;
+	}
+	100% {
+		top: 50%;
+		height: 100%;
+		padding: 0px 100%;
+	}
+}
+
+@keyframes borderRadius {
+	0% {
+		border-radius: 50%;
+	}
+	100% {
+		border-radius: 0px;
+	}
+}
+
+@keyframes moveDown {
+	0% {
+		top: 50%;
+	}
+	50% {
+		top: 40%;
+	}
+	100% {
+		top: 100%;
+	}
+}
+
+@keyframes moveUp {
+	0% {
+		background: #ffffff;
+		top: 100%;
+	}
+	50% {
+		top: 40%;
+	}
+	100% {
+		top: 50%;
+		background: #ffffff;
+	}
+}
+
+@keyframes materia {
+	0% {
+		background: #ffffff;
+	}
+	50% {
+		background: #ffffff;
+		top: 26px;
+	}
+	100% {
+		background: #ffffff;
+		width: 100%;
+		height: 64px;
+		border-radius: 0px;
+		top: 26px;
+	}
+}
+@keyframes moveIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes hide {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.card-image {
+	width: 100%;
+	max-height: 100%;
+	height: 250px;
+	overflow: hidden;
+}
+@media only screen and (max-width: 500px) {
+	.card-image {
+		width: 100%;
+		max-height: 100%;
+		height: 300px;
+		overflow: hidden;
+	}
+}
+.card-title {
+	height: 15px;
+}
+
+.one h2 {
+	border-bottom: 2px solid black;
+}
+.two h2 {
+	border-bottom: 2px solid black;
+}
+.three h2 {
+	border-bottom: 2px solid black;
+}
+.four h2 {
+	border-bottom: 2px solid black;
+}
+
+/* footer starts */
+.page-footer,
+.page-footer .footer-copyright {
+	background-color: #000;
+	color: #fff;
+}
+.page-footer img {
+	height: 36px;
+	width: 36px;
+	margin: 1.5px;
+}
+
+/* footer ends */

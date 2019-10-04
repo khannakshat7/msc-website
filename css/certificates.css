@@ -1,0 +1,42 @@
+html,body {
+  height: 100%; 
+  font-family:Calibri;
+}
+.container{
+  min-height:100%;
+  margin-bottom: -400px;
+  padding-bottom: 200px;
+}
+
+input{
+  display: inline-block;
+  box-sizing: border-box;
+  transition: .5s;
+}
+
+.btn{
+  border-radius: 25px 25px;
+  width: 200px;
+  background: #ffc107;
+  color: #000000;
+}
+
+.btn:hover{
+  background: #ff5722;
+}
+
+.page-footer{
+    position:fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+#errorlink{
+    color: red;
+}
+#errorlink, #datalink, .progress{
+    visibility: hidden;
+}
+.col{
+  margin-top:1rem;
+}

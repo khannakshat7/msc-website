@@ -1,0 +1,200 @@
+#card1 {
+	width: 100%;
+	height: 210px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+#mcard {
+	margin: 10px;
+	border-radius: 10px;
+}
+.card_title{
+	text-align: center;
+}
+.videocard{
+	border-radius: 10px;
+}
+.face {
+    width: 100%;
+    height: 200px;
+    transition: 0.5s;
+    line-height: 20px;
+    border-radius: 10px;
+}
+
+.face1, .face2, .face3, .face4, .face5, .face1x, .face2x, .face3x, .face4x, .face5x, .face_close{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.face2, .face3, .face4, .face5, .face6, .face2x, .face3x, .face4x, .face5x, .face6x {
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    transform: translateY(-100px);
+    height: 250px;
+}
+
+.face2x, .face3x, .face4x, .face5x, .face6x {
+  transform: translateY(0px);
+}
+
+.face1, .face1x, .face_close {
+  display: flex;
+  z-index: 1;
+}
+
+.face1 {
+    transform: translateY(100px);
+}
+
+.face2 {
+  background: #B22222;
+}
+.face3 {
+  background: #A3CD39;
+}
+.face4 {
+  background: #00BFFF;
+}
+.face5 {
+  background: #F1C40F;
+}
+.face6{
+	background: #d500f9;
+}
+
+.face1x {
+    background: #333;
+    transform: translateY(0);
+}
+.face2x{
+  background: #fff;
+}
+
+.face3x{
+  background: #fff;
+}
+
+.face4x{
+  background: #fff;
+}
+
+.face5x{
+  background: #fff;
+}
+.face_close{
+  background: #333;
+  transform: translateY();
+
+}
+
+.face2 p {
+	margin: 0;
+	padding: 0;
+}
+.face2 a {
+	margin: 15px 0 0;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 900;
+	color: #333;
+	padding: 5px;
+	border: 1px solid #333;
+}
+.face2 a {
+	background: #333;
+	color: #fff;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Calibri;
+}
+
+.m-2 {
+	margin: 2px;
+}
+
+/* Buttons */
+#btn {
+	vertical-align: bottom;
+}
+.login-btn {
+	background-color: #00bfff;
+	padding: 0 45px;
+	margin-top: 0px;
+	color: white;
+	font-weight: 500;
+	cursor: pointer;
+	line-height: 40px;
+	border: 0;
+	border-radius: 40px;
+	box-shadow: rgba(0, 191, 255, 0.25) 0 7px 5px;
+}
+.login-btn:hover {
+	box-shadow: rgba(0, 191, 255, 0.40) 0 10px 10px;
+	background-color: #fff;
+	color: #00bfff;
+	border: 2px solid #00bfff;
+}
+.login-btn {
+	transition: ease-in-out 0.2s all;
+	-webkit-transition: ease-in-out 0.2s all;
+	-moz-transition: ease-in-out 0.2s all;
+	-o-transition: ease-in-out 0.2s all;
+}
+.color2 {
+	background-color: #f1c40f;
+	box-shadow: rgba(255, 255, 0, 0.25) 0 7px 5px;
+}
+.color2:hover {
+	box-shadow: rgba(255, 255, 0, 0.40) 0 10px 10px;
+	color: #f1c40f;
+	border: 2px solid #ffff00;
+}
+.color3 {
+	background-color: #b22222;
+	box-shadow: rgba(178, 34, 34, 0.25) 0 7px 5px;
+}
+.color3:hover {
+	box-shadow: rgba(178, 34, 34, 0.40) 0 10px 10px;
+	color: #b22222;
+	border: 2px solid #b22222;
+}
+.color4 {
+	background-color: #a3cd39;
+	box-shadow: rgba(163, 205, 57, 0.25) 0 7px 5px;
+}
+.color4:hover {
+	box-shadow: rgba(163, 205, 57, 0.40) 0 10px 10px;
+	color: #a3cd39;
+	border: 2px solid #a3cd39;
+}
+.color5 {
+	background-color: #d500f9;
+	box-shadow: rgba(163, 205, 57, 0.25) 0 7px 5px;
+}
+.color5:hover {
+	box-shadow: rgba(163, 205, 57, 0.40) 0 10px 10px;
+	color: #d500f9;
+	border: 2px solid #d500f9;
+}
+/* Buttons End */
+
+/* footer starts */
+.page-footer,
+.page-footer .footer-copyright {
+	background-color: #000;
+	color: #fff;
+}
+.page-footer img {
+	height: 36px;
+	width: 36px;
+	margin: 1.5px;
+}
+
+/* footer ends */

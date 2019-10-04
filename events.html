@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130200243-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-130200243-3');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="See all the events that we have done and even those that we plan to do in the future.">
+  <link rel='shortcut icon' href='favicon.png' type='image/x-icon' />
+
+
+  <title>
+    Events | Microsoft Club - SRMIST
+  </title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style_events.css">
+  <style>
+    p,
+    a,
+    .black-text {
+      font-family: calibri;
+      font-size: 20px;
+    }
+
+    h1,
+    h2 {
+      font-family: calibri;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!--header-->
+  <nav class="white">
+    <div class="navbar-fixed">
+      <a href="index.html" class="black-text brand-logo"><img src="img/logo.png" alt="logo" style="height:50px;"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"
+          style="color: black">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="black-text" href="index.html">Home</a></li>
+        <li class="active teal lighten-3"><a class="black-text" href="events.html">Events</a></li>
+        <li><a class="black-text" href="gallery.html">Gallery</a></li>
+        <li><a class="black-text" href="team.html">Team</a></li>
+
+      </ul>
+    </div>
+  </nav>
+  <ul class="sidenav white" id="mobile-demo">
+
+    <li><a class="black-text" href="index.html">Home</a></li>
+    <li class="active teal lighten-3"><a class="black-text" href="events.html">Events</a></li>
+    <li><a class="black-text" href="gallery.html">Gallery</a></li>
+    <li><a class="black-text" href="team.html">Team</a></li>
+
+  </ul>
+  <!--container starts here-->
+  <div class="container">
+    <div class="row" style="margin-top: 25px">
+      <div class="header">
+        <h1 class="center-align">Events</h1>
+      </div>
+      <!-- 2*2 cards -->
+      <div class="row">
+        <!-- codestruck -->
+        <div class="col s12 m6 offset-m3">
+          <div id="mcard">
+            <div class="face face1" id="5" onclick="expand(id)">
+              <div class="card horizontal small" id="card1">
+                <div class="card-content center-block">
+                  <span class="card-title" style="margin-top: 40%;">CodeStruck 1.0</span>
+                </div>
+              </div>
+            </div>
+            <div class="face face6" id="5x">
+              <p class="m-2"><b>17-18<sup>th</sup> &amp; 25<sup>th</sup> August, 2019</b></p>
+              <p class="m-2">The first edition of CodeStruck saw a footfall of 1000+ students. Certificates for those who made it to the 2nd round will be made available soon. </p>
+              <input type="button" value="Images" class="login-btn color5" style="position: absolute; bottom: 55px;"
+              onclick="window.location.href = 'gallery.html'">
+              <input type="button" value="Certificates" class="login-btn color5" style="position: absolute; bottom: 55px; right: 3.5%; padding: 0px 32px;"
+              onclick="window.location.href = 'Certificates.html'">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6">
+          <div id="mcard">
+            <div class="face face1" id="1" onclick="expand(id)">
+              <div class="card horizontal small" id="card1">
+                <div class="card-content valign-wrapper center-align">
+                  <div class="card-title center-align">Data Science and Machine Learning Basics</div>
+                </div>
+              </div>
+            </div>
+            <div class="face face2" id="1x">
+              <p class="m-2"><b>05<sup>th</sup> April, 2019</b></p>
+              <div>
+                <p class="m-2" style="max-height:130px">Data Science and ML are two intertwined topics that have really
+                  caught the imagination of tech enthusiasts.</p>
+                <input id="btn" type="button" value="Images" class="login-btn color3"
+                  style="position: absolute; bottom: 50px" onclick="window.location.href = 'gallery.html'">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div id="mcard">
+            <div class="face face1" id="2" onclick="expand(id)">
+              <div class="card horizontal small" id="card1">
+                <div class="card-content valign-wrapper center-align">
+                  <div class="card-title center-align">Interactive Coding Learning Workshop</div>
+                </div>
+              </div>
+            </div>
+            <div class="face face3" id="2x">
+              <p class="m-2"><b>06<sup>th</sup> October, 2018</b></p>
+              <p class="m-2">Join us to kick-start your dev journey from scratch to pro. Every participant will be
+                provided with a subscription to enable them to learn even after the workshop.</p>
+              <input type="button" value="Images" class="login-btn color4" style="position: absolute; bottom: 50px"
+                onclick="window.location.href = 'gallery.html'">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 m6">
+            <div id="mcard">
+              <div class="face face1" id="3" onclick="expand(id)">
+                <div class="card horizontal small" id="card1">
+                  <div class="card-content center-block">
+                    <span class="card-title" style="margin-top: 40%;">MSI Campus Meet</span>
+                  </div>
+                </div>
+              </div>
+              <div class="face face4" id="3x">
+                <p class="m-2"><b>09<sup>th</sup> September, 2017</b></p>
+                <p class="m-2">Microsoft Club, SRM University hosts MSI Gaming on 9th September at MBA Seminar Hall from
+                  11 AM to 3 PM.</p>
+                <input type="button" value="Images" class="login-btn color1" style="position: absolute; bottom: 50px"
+                  onclick="window.location.href = 'gallery.html'">
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div id="mcard">
+              <div class="face face1" id="4" onclick="expand(id)">
+                <div class="card horizontal small" id="card1">
+                  <div class="card-content center-block">
+                    <div class="card-title" style="margin-top: 50%;">Imagine Talks</div>
+                  </div>
+                </div>
+              </div>
+              <div class="face face5" id="4x">
+                <p class="m-2"><b>02<sup>nd</sup> September, 2017</b></p>
+                <p class="m-2"></p>
+                <input type="button" value="Images" class="login-btn color2" style="position: absolute; bottom: 50px"
+                  onclick="window.location.href = 'gallery.html'">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer starts -->
+
+  <footer class="page-footer">
+    <div class="container center-align">
+      <p>Campus WiFi might not work all the time, but Azure does. Feel free to reach out to us through whatever means
+        you see fit.</p>
+      <p>Reach out to us!</p>
+      <a href="mailto:hello@MicrosoftClubSRM.com" class="tooltipped" data-position="top" data-tooltip="Mail"><img
+          src="img/envelope.svg" alt="mail"></a>
+      <img src="img/minus-horizontal-straight-line.svg">
+      <a href="https://www.facebook.com/MSTCSRM/" class="tooltipped" data-position="top" data-tooltip="Facebook"><img
+          src="img/facebook.svg" alt="fb"></a>
+      <img src="img/minus-horizontal-straight-line.svg">
+      <a href="https://www.instagram.com/MSTCsrm/" class="tooltipped" data-position="top" data-tooltip="Instagram"><img
+          src="img/instagram.svg" alt="instagram"></a>
+      <img src="img/minus-horizontal-straight-line.svg">
+      <a href="https://www.linkedin.com/company/mstc-srm/" class="tooltipped" data-position="top"
+        data-tooltip="LinkedIn"><img src="img/linkedin.svg" alt="linkedin"></a>
+    </div>
+    <div class="footer-copyright center-align grey darken-3">
+      <div class="container">
+        &copy; 2019 Copyright<br />
+        <span>Developed by the Web Devs at MSTC</span>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends -->
+
+
+
+
+
+
+  <!-- Footer ends-->
+  <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/events.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.modal').modal();
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.tooltipped').tooltip();
+    });
+  </script>
+</body>
+
+</html>

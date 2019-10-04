@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Find and download certificates for past events.">
+    <meta name="keywords" content="mstc certificates,CodeStruck certificates">
+    <link rel='shortcut icon' href='favicon.png' type='image/x-icon' />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130200243-3"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-storage.js"></script>
+
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-130200243-3');
+    </script>
+    <title>Certificates | MSCLUB SRM</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/certificates.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!--header-->
+    <nav class="white">
+        <div class="navbar-fixed">
+            <a href="index.html" class="black-text brand-logo"><img src="img/logo.png" alt="logo"
+                    style="height:50px;"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"
+                    style="color: black">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+
+                <li><a class="black-text" href="index.html">Home</a></li>
+                <li><a class="black-text" href="events.html">Events</a></li>
+                <li><a class="black-text" href="gallery.html">Gallery</a></li>
+                <li><a class="black-text" href="team.html">Team</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav white" id="mobile-demo">
+        <li><a class="black-text" href="index.html">Home</a></li>
+        <li><a class="black-text" href="events.html">Events</a></li>
+        <li><a class="black-text" href="gallery.html">Gallery</a></li>
+        <li><a class="black-text" href="team.html">Team</a></li>
+
+    </ul>
+    <!--end navbar-->
+    <div class="progress" id="progress">
+        <div class="indeterminate"></div>
+    </div>
+    <div class="container">
+        <h1>Certificates</h1>
+        <h6>(available only for 2nd Round of CodeStruck 1.0)</h6>
+        <div class="row">
+            <a href="#!" id="errorlink">s</a>
+        </div>
+        <div class="row">
+            <form>
+                <label for="regid">Registered Email ID</label>
+                <input type="email" name="regno" placeholder="Enter Email ID..." id="regid">
+            </form>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <a class="btn" onclick="dod()">Search</a>
+            </div>
+            <div class="col">
+                <a class="btn" target="_blank" href="" id="datalink" download></a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- footer starts -->
+
+    <footer class="page-footer">
+        <div class="center-align">
+            <p>Campus WiFi might not work all the time, but Azure does. Feel free to reach out to us through whatever
+                means you see fit.</p>
+            <p>Reach out to us!</p>
+            <a href="mailto:hello@MicrosoftClubSRM.com" class="tooltipped" data-position="top" data-tooltip="Mail"><img
+                    src="img/envelope.svg" alt="mail"></a>
+            <img src="img/minus-horizontal-straight-line.svg">
+            <a href="https://www.facebook.com/MSTCSRM/" class="tooltipped" data-position="top"
+                data-tooltip="Facebook"><img src="img/facebook.svg" alt="fb"></a>
+            <img src="img/minus-horizontal-straight-line.svg">
+            <a href="https://www.instagram.com/MSTCsrm/" class="tooltipped" data-position="top"
+                data-tooltip="Instagram"><img src="img/instagram.svg" alt="instagram"></a>
+            <img src="img/minus-horizontal-straight-line.svg">
+            <a href="https://www.linkedin.com/company/mstc-srm/" class="tooltipped" data-position="top"
+                data-tooltip="LinkedIn"><img src="img/linkedin.svg" alt="linkedin"></a>
+        </div>
+        <div class="footer-copyright center-align grey darken-3">
+            <div class="container">
+                &copy; 2019 Copyright<br />
+                <span>Developed by the Web Devs at MSTC</span>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/certificates.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
+
+</body>
+
+</html>
